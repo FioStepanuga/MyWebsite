@@ -1,0 +1,278 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+ 
+    <!-- QUESTION: this is an example of an attribute. The UTF-8 charset is a set of 
+    characters we want the html to use.--> 
+ 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+    <title>Hobbies</title> 
+ 
+    <link rel="stylesheet" href="./styles.css"> 
+ 
+    <!-- Bootstrap CSS --> 
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+        <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</head>
+
+<!-- QUESTION: this is a parent child relationship. The body element nests
+many different other elements inside of it. The body tag is the parent and the
+other elements within are the children.-->
+
+<body>
+
+    <!-- Bootstrap Navigation Bar -->
+    <!-- The navbar class creates a Bootstrap navigation bar.
+         navbar-expand-lg means the navigation links are expanded on
+         large screens and collapse into a menu on smaller screens.
+         navbar-dark makes the navbar text/icons use a dark-navbar
+         compatible color scheme, while bg-dark gives the navbar a
+         dark background.-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="home.html">Fio's Website</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hobbies.html">Hobbies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <main class="container page-content">
+    
+        <!-- QUESTION: This is an example of an element. This header defines how the web browser should
+         display the information within the tag. In this case, the element is a header and the header
+         will show "Hobbies"-->
+        <h1>Hobbies</h1>
+
+        <!-- Bootstrap responsive grid -->
+        <!-- The row class creates a Bootstrap grid row.
+             g-4 controls the gutters, which are the spaces between
+             the columns and rows. The 4 represents Bootstrap's
+             spacing scale for the size of the gutters. -->
+
+        <div class="row g-4">
+
+            <!-- Tennis -->
+            <!-- col-12 makes the card take the full width on small screens.
+                 col-md-6 makes it take half the width on medium screens.
+                 col-lg-4 makes it take one third of the width on large screens. -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <section class="card h-100 shadow hobby-card">
+
+                    <img
+                        class="card-img-top"
+                        src="../resources/img/tennisstate.JPG"
+                        alt="Picture of me at tennis state championship"
+                    >
+
+                    <div class="card-body">
+
+                        <h2 class="card-title">Tennis</h2>
+
+                        <p class="card-text">
+                            Tennis has been an important hobby of mine since high school.
+                        </p>
+
+                        <!-- Bootstrap Collapse -->
+                        <button
+                            class="btn btn-primary"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#tennisInfo"
+                            aria-expanded="false"
+                            aria-controls="tennisInfo">
+                            Learn More
+                        </button>
+
+                        <div class="collapse mt-3" id="tennisInfo">
+
+                            <p class="card-text">
+                                I have been playing tennis since sophomore year of high school.
+                                I played for my highschool team for 3 years. I am a two time
+                                state qualifier and I still play with my friends casually from
+                                time to time. Tennis has taught me a lot about teamwork and
+                                skill building.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- Music Production -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <section class="card h-100 shadow hobby-card">
+
+                    <img
+                        class="card-img-top"
+                        src="../resources/img/flicon.png"
+                        alt="Picture of FL Studio"
+                    >
+
+                    <div class="card-body">
+
+                        <h2 class="card-title">Music Production</h2>
+
+                        <p class="card-text">
+                            I enjoy creating music and producing my own beats.
+                        </p>
+
+                        <!-- Bootstrap Collapse -->
+                        <button
+                            class="btn btn-primary"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#musicInfo"
+                            aria-expanded="false"
+                            aria-controls="musicInfo">
+                            Learn More
+                        </button>
+
+                        <div class="collapse mt-3" id="musicInfo">
+
+                            <p class="card-text">
+                                I have always loved listening to music, and I have a personality
+                                that loves creating things. I combined my two interests and started
+                                producing music. I have slowed down because of college but I have
+                                around 6 months of experience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- Cooking -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <section class="card h-100 shadow hobby-card">
+
+                    <img
+                        class="card-img-top"
+                        src="../resources/img/cookingimage.jpg"
+                        alt="Picture of cooking"
+                    >
+
+                    <div class="card-body">
+
+                        <h2 class="card-title">Cooking</h2>
+
+                        <p class="card-text">
+                            I enjoy cooking different dishes, especially desserts and Italian food.
+                        </p>
+
+                        <!-- Bootstrap Collapse -->
+                        <button
+                            class="btn btn-primary"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#cookingInfo"
+                            aria-expanded="false"
+                            aria-controls="cookingInfo">
+                            Learn More
+                        </button>
+
+                        <div class="collapse mt-3" id="cookingInfo">
+
+                            <p class="card-text">
+                                I started learning how to cook many different dishes over the summer
+                                of 2026. I love to make desserts such as creme brulee, muffins, and
+                                cakes. I like to make italian dishes, tacos, chicken dishes, and a
+                                lot more.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/" target="_blank">
+                Fio-Stepanuga
+            </a>
+
+            &nbsp;&nbsp;
+
+            Email:
+            <a href="mailto:fstepanuga@gmail.com">
+                fstepanuga@gmail.com
+            </a>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
